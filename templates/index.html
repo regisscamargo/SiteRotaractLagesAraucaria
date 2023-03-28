@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Rifa Coparact</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="static/images/img-01.png" alt="IMG">
+				</div>
+
+				<form class="login100-form validate-form" action="{{ url_for('homepage') }}" method="post">
+					<span class="login100-form-title">
+						<br><br>Ação entre amigos Rotaract Lages Araucária
+					</span>
+					<span class="login100-form-title">
+						Consulte o número disponível:
+					</span>
+
+
+					<div >
+						<input class="input100" type="number" name="numero" placeholder="Número" autocomplete="off">
+						<span class="focus-input100"></span>
+						<div class="container-login100-form-btn">
+								<button class="login100-form-btn">
+									Consulta
+								</button>
+	
+							</div>
+					</div>
+				</form>
+
+
+
+				<div class="container-login100-form-btn">
+					<form action="{{ url_for('livres') }}" method="post">
+						<button class="login100-form-btn">
+							disponíveis
+						</button>
+				</div>
+				
+				
+				<div class="text-center p-t-12">
+					<span class="txt1">
+						
+					</span>
+					<a class="txt2" href="#">
+						
+					</a>
+				</div>
+				
+				<div class="text-center p-t-136">
+					<a class="txt2" href="#">
+	
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+<!--===============================================================================================-->	
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+
+
+</body>
+</html>

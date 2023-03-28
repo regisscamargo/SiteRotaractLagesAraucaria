@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100" margin-left="200">
+                <!-- <div class="login100-pic js-tilt" data-tilt>
+					<img src="static/images/copa.png" alt="IMG">
+				</div> -->
+                <div>
+                    <p>
+                        <div>
+                            <h1>
+                                Insira os dados:
+                                <span class="login100-form-title">
+
+                                </span>
+                            </h1>
+                        </div>
+                    </p>
+                    <p>
+                    <form action="{{ url_for('form') }}" method="post">
+                    <div>    
+                        <label for="">Reescreva o número a ser vendido:</label>
+                        <input type="number" name="numero_rifa" placeholder="Número da venda" class="input100" autocomplete="off">
+                        
+                    </div>
+                    </p>
+                    <p>
+                    <div>    
+                        <label for="">Comprador:</label>
+                        <input type="text" name="comprador" placeholder="Nome do comprador" class="input100" autocomplete="off">
+                        
+                    </div>
+                    <div>    
+                        <label for="">Telefone:</label>
+                        <input name="telefone" type="tel" placeholder="Telefone do comprador" class="input100" autocomplete="off">
+                        
+                    </div>
+                    <div>    
+                        <label for="">Vendedor:</label>
+                        <input type="text" name="Vendedor" placeholder="Nome do companheiro" class="input100" autocomplete="off">
+                    </div>
+                    <span class="login100-form-title">
+
+                    </span>
+                        <button class="login100-form-btn">Salvar</button>
+                    </form>
+                    </p>
+                        </div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+<!--===============================================================================================-->	
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+
+
+</body>
+</html>
